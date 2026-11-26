@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">CA</div>
+                <div>
+                    <h2>School Access</h2>
+                    <p>Controle escolar</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="index.html" class="ativo">Painel inicial</a>
+                <a href="#movimentacoes">Movimentações</a>
+                <a href="#informacoes">Informações</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                Sistema de Controle<br>
+                de Acesso Escolar
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <header class="topo">
+
+                <div>
+                    <h1>Painel de Controle</h1>
+                    <p>Acompanhamento de entradas e saídas da escola.</p>
+                </div>
+
+                <div class="status">
+                    <span class="bolinha"></span>
+                    Sistema ativo
+                </div>
+
+            </header>
+
+            <!-- BOAS-VINDAS -->
+            <section class="boas-vindas">
+                <h2>Bem-vindo ao painel!</h2>
+                <p>
+                    Acompanhe a movimentação de pessoas
+                    na escola através da catraca digital.
+                </p>
+            </section>
+
+            <!-- INDICADORES -->
+            <section class="indicadores" id="informacoes">
+
+                <div class="card">
+                    <div class="card-topo">
+                        <span>Pessoas dentro</span>
+                        <span class="icone azul">●</span>
+                    </div>
+
+                    <h2>25</h2>
+                    <p>Pessoas atualmente na escola</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-topo">
+                        <span>Entradas hoje</span>
+                        <span class="icone verde">↗</span>
+                    </div>
+
+                    <h2>42</h2>
+                    <p>Entradas registradas hoje</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-topo">
+                        <span>Saídas hoje</span>
+                        <span class="icone vermelho">↙</span>
+                    </div>
+
+                    <h2>17</h2>
+                    <p>Saídas registradas hoje</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-topo">
+                        <span>Movimentações</span>
+                        <span class="icone roxo">⇄</span>
+                    </div>
+
+                    <h2>59</h2>
+                    <p>Total de entradas e saídas hoje</p>
+                </div>
+
+            </section>
+
+            <!-- ÚLTIMOS ACESSOS -->
+            <section class="tabela-area" id="movimentacoes">
+
+                <div class="tabela-topo">
+
+                    <div>
+                        <h2>Últimos acessos</h2>
+                        <p>Registros recentes de movimentação.</p>
+                    </div>
+
+                    <span class="tag">Últimos registros</span>
+
+                </div>
+
+                <div class="tabela-scroll">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Categoria</th>
+                                <th>Data e hora</th>
+                                <th>Movimentação</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td class="nome">João Silva</td>
+                                <td>123.456.789-01</td>
+                                <td>Aluno</td>
+                                <td>26/11/2026 07:30</td>
+                                <td>
+                                    <span class="entrada">Entrada</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="nome">Maria Souza</td>
+                                <td>123.456.789-02</td>
+                                <td>Aluno</td>
+                                <td>26/11/2026 07:35</td>
+                                <td>
+                                    <span class="entrada">Entrada</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="nome">Carlos Oliveira</td>
+                                <td>123.456.789-03</td>
+                                <td>Funcionário</td>
+                                <td>26/11/2026 07:40</td>
+                                <td>
+                                    <span class="entrada">Entrada</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="nome">Maria Souza</td>
+                                <td>123.456.789-02</td>
+                                <td>Aluno</td>
+                                <td>26/11/2026 08:00</td>
+                                <td>
+                                    <span class="saida">Saída</span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="nome">Pedro Costa</td>
+                                <td>123.456.789-05</td>
+                                <td>Visitante</td>
+                                <td>26/11/2026 08:15</td>
+                                <td>
+                                    <span class="entrada">Entrada</span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <footer>
+                Controle de Acesso Escolar © 2026
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fb;
+    color: #263247;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 250px;
+    background-color: #172b4d;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 55px;
+}
+
+.logo-icon {
+    background-color: #3978d5;
+    padding: 13px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 17px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #b6c4da;
+    margin-top: 4px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #c4d0e0;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.ativo {
+    background-color: #294b7c;
+    color: white;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 25px;
+    color: #91a5c1;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.topo h1 {
+    font-size: 27px;
+    color: #172b4d;
+    margin-bottom: 8px;
+}
+
+.topo p {
+    color: #7b8798;
+    font-size: 14px;
+}
+
+.status {
+    background-color: #e4f7eb;
+    color: #23834b;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.bolinha {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #2eaf61;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* BOAS-VINDAS */
+.boas-vindas {
+    background-color: #245ca6;
+    color: white;
+    padding: 28px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+
+.boas-vindas h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.boas-vindas p {
+    font-size: 14px;
+    color: #e0eafa;
+}
+
+/* INDICADORES */
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 23px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #7b8798;
+    margin-bottom: 20px;
+}
+
+.icone {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.azul {
+    color: #347bd1;
+}
+
+.verde {
+    color: #25a45c;
+}
+
+.vermelho {
+    color: #df5555;
+}
+
+.roxo {
+    color: #8663cf;
+}
+
+.card h2 {
+    font-size: 30px;
+    color: #172b4d;
+    margin-bottom: 9px;
+}
+
+.card p {
+    font-size: 12px;
+    color: #8994a4;
+}
+
+/* TABELA */
+.tabela-area {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.tabela-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.tabela-topo h2 {
+    font-size: 19px;
+    color: #172b4d;
+    margin-bottom: 7px;
+}
+
+.tabela-topo p {
+    font-size: 13px;
+    color: #8994a4;
+}
+
+.tag {
+    background-color: #edf3fc;
+    color: #3978c9;
+    padding: 9px 13px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+.tabela-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #f5f7fa;
+}
+
+th {
+    color: #778397;
+    font-size: 12px;
+    padding: 15px 12px;
+}
+
+td {
+    padding: 17px 12px;
+    border-bottom: 1px solid #edf0f4;
+    font-size: 13px;
+    color: #536176;
+}
+
+.nome {
+    font-weight: bold;
+    color: #263247;
+}
+
+/* ENTRADA E SAÍDA */
+.entrada,
+.saida {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.entrada {
+    background-color: #e3f6e9;
+    color: #23834b;
+}
+
+.saida {
+    background-color: #fde9e9;
+    color: #c74c4c;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    color: #99a3b1;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1000px) {
+    .indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        width: 210px;
+    }
+}
+
+@media (max-width: 650px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .topo {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .indicadores {
+        grid-template-columns: 1fr;
+    }
+}
